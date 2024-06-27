@@ -108,14 +108,14 @@ try:
                 <td>{{ maximum_marks }}</td>
             </tr>
         </table>
-        <img src="histo.png" alt="Histogram">
+        <img src="histogram.png" alt="Histogram">
     </body>
     </html>
     '''
             plt.hist(course_list)
             plt.xlabel('Marks')
             plt.ylabel('Frequency')
-            plt.savefig('histo.png')
+            plt.savefig('histogram.png')
             template = Template(course_details)
             out = template.render(average_marks=average_marks, maximum_marks=maximum_marks)
         else:
