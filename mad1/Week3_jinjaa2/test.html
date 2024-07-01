@@ -1,5 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for product in Products | groupby("Producer")}
+      {{product.grouper}}
+      {{product.list}}
+    {%endfor}
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -18,9 +57,9 @@
 
         Developer
     </p>
-</body>
+</body> -->
 
-</html>
+<!-- </html> -->
 
 
 <!-- <!DOCTYPE html>
