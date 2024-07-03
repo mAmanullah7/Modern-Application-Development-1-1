@@ -1,0 +1,13 @@
+{% extends 'student.html' %}
+{% block title %} Wrong Inputs {% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+            
+        <h1 align="center">Wrong Inputs</h1>
+
+        <p align="center">Something went wrong</p>
+
+        {% block link %} {{super()}} {% endblock %}
+{% endblock %}

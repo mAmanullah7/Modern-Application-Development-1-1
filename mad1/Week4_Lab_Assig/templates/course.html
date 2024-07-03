@@ -1,0 +1,30 @@
+{% extends 'student.html' %}
+
+{% block title %} Course Data {% endblock %}
+
+{% block body %}
+    <h1>Course Details</h1>
+    <table border = "2" id = "course-details-table">
+        <tr>
+            <th>Average Marks</th>
+            <th>Maximum Marks</th>
+        </tr>
+        <tr>
+            <td>{{avgs}}</td>
+    
+            <td>{{maxs}}</td>
+        </tr>
+    </table>
+        
+    <img src="./static/histogram.png">
+    <br>
+    {% block link %} {{super()}} {% endblock %}
+{% endblock %}
+                
+            
+        
+
+
+
+
+    

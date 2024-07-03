@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}Student Data{% endblock %} </title>
+    </head>
+       
+    <body>{% block body %}
+        
+                
+        <h1>Student Details</h1>
+        <table border = "2" id = "student-details-table">
+            <tr>
+                <th>Student Id</th>
+                <th>Course Id</th>
+                <th>Marks</th>
+            </tr>
+            {% for i in range((course_id|length)) %}
+            <tr>
+                <td>{{id}}</td>
+                <td>{{course_id[i]}}</td>
+                <td>{{marks[i]}}</td>
+            </tr>{% endfor %}
+           
+            <tr>
+                <td colspan = "2" style="text-align:center"> Total Marks </td>
+                <td>{{total}}</td>
+            </tr>
+        </table>
+
+        {% block link %} <a href="{{url_for('index')}}">Go Back</a> {% endblock link %}
+        
+                
+        
+    {% endblock %}    
+    </body>
+    
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enter Details</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            /* Custom CSS */
+            body {
+                background-color: #f0f0f0; 
+            }
+            .custom-background {
+                background-color: lightblue; 
+                border-radius: 10px; 
+                padding: 20px; 
+                box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); 
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container mt-5">
+            <form method="POST",action="/" id="data-form">
+                <div class="row justify-content-center">
+                    <div class="col-6 custom-background">
+                        <div class="row align-items-center g-3">
+                            <h1>Enter the Details</h1>
+                            <div class="col-auto">
+                                <input type="radio" class="form-check-input" name="ID" value="student_id">
+                                <label class="form-check-label" for="ID">Student ID</label>
+                            </div>
+                            <div class="col-auto">
+                                <input type="radio" class="form-check-input" name="ID" value="course_id">
+                                <label class="form-check-label" for="ID">Course ID</label>
+                            </div>
+                            <div class="col-auto">
+                                <input class="form-control" type="text" name="id_value">
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
